@@ -57,9 +57,12 @@ class NavBar extends React.Component {
       <div >
 
         <AppBar position="static">
+
           <IconButton className={classes.menuButton} onClick={this.handleClick}>
             <MenuIcon />
+            <Typography>Katie Westbrook</Typography>
           </IconButton>
+
           <Menu open={open}
             onClose={this.handleClose}
             anchorEl={anchorEl}
