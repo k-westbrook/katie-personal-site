@@ -9,7 +9,9 @@ import Menu from '@material-ui/core/Menu';
 import { Link } from 'react-router-dom'
 
 const styles = {
-
+  root: {
+    flexGrow: 1
+  },
   AppBar: {
     display: "flex",
     flexDirection: "row"
@@ -17,6 +19,7 @@ const styles = {
   Menu:
   {
     display: "flex",
+    width: 200000
   },
   MenuItem:
   {
@@ -53,7 +56,7 @@ class NavBar extends React.Component {
     const open = Boolean(anchorEl);
 
     return (
-      <div >
+      <div className={classes.root}>
 
         <AppBar position="static" className={classes.AppBar}>
 
@@ -83,19 +86,19 @@ class NavBar extends React.Component {
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
               <Link to='/projects'>
-                <h4>Projects</h4>
+                <h4>Trips</h4>
               </Link>
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
               <Link to='/aboutme'>
-                <h4> About Me</h4>
+                <h4> Cats</h4>
               </Link>
             </MenuItem>
 
             <MenuItem onClick={this.handleClose}>
 
               <Link to='/photo-gallery'>
-                <h4>Photo Gallery</h4>
+                <h4>Seattle</h4>
               </Link>
             </MenuItem>
           </Menu>
