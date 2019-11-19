@@ -1,28 +1,40 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage';
+import Cats from './Cats'
+import { withStyles } from '@material-ui/core/styles';
+import { sizing } from '@material-ui/system';
 
+
+const styles = {
+  root: {
+    flexGrow: 1,
+    backgroundColor: "#37474f",
+    height: "100%",
+    width: "100%"
+  }
+}
 
 
 class Routes extends Component {
 
 
   render() {
-
+    const { classes } = this.props;
     return (
-
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/aboutme" />
-        <Route exact path='/projects' />
-        <Route exact path='/photo-gallery' />
-      </Switch>
-
+      <div className={classes.root}>
+        <Switch >
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/cats" component={Cats} />
+          <Route exact path='/projects' />
+          <Route exact path='/photo-gallery' />
+        </Switch>
+      </div>
     )
   }
 }
 
 
-export default Routes
+export default withStyles(styles)(Routes)
 
 

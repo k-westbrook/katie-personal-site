@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './NavBar'
 import './App.css';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { sizing } from '@material-ui/system';
 
 const theme = createMuiTheme({
   palette: {
@@ -20,6 +21,7 @@ const theme = createMuiTheme({
   status: {
     danger: 'orange',
   },
+  height: "100%"
 });
 
 class App extends Component {

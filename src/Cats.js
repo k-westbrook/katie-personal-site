@@ -11,7 +11,7 @@ const styles = {
 }
 
 
-class HomePage extends Component {
+class Cats extends Component {
 
 
 
@@ -19,7 +19,7 @@ class HomePage extends Component {
     const { classes } = this.props;
     return (
       <div >
-        <h1>home
+        <h1>Cats
       </h1>
       </div>
     )
@@ -29,4 +29,4 @@ class HomePage extends Component {
 }
 
 
-export default withStyles(styles)(HomePage)
+export default withStyles(styles)(Cats)

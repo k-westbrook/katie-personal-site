@@ -19,7 +19,7 @@ const styles = {
   Menu:
   {
     display: "flex",
-    width: 200000
+
   },
   MenuItem:
   {
@@ -78,7 +78,7 @@ class NavBar extends React.Component {
               horizontal: 'left',
             }}
           >
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
               <Link to='/'>
                 <h4>Home</h4>
               </Link>
@@ -90,7 +90,7 @@ class NavBar extends React.Component {
               </Link>
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-              <Link to='/aboutme'>
+              <Link to='/cats'>
                 <h4> Cats</h4>
               </Link>
             </MenuItem>
