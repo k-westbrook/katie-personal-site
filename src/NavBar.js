@@ -13,6 +13,14 @@ const styles = {
   AppBar: {
     display: "flex",
     flexDirection: "row"
+  },
+  Menu:
+  {
+    display: "flex",
+  },
+  MenuItem:
+  {
+
   }
 }
 class NavBar extends React.Component {
@@ -54,7 +62,8 @@ class NavBar extends React.Component {
             <Typography>Katie Westbrook</Typography>
           </IconButton>
 
-          <Menu open={open}
+          <Menu className={classes.Menu}
+            open={open}
             onClose={this.handleClose}
             anchorEl={anchorEl}
             anchorOrigin={{
