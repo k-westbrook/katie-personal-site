@@ -21,8 +21,7 @@ const styles = {
     flexGrow: 1,
   },
   menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
+    marginLeft: -900
   }
 }
 class NavBar extends React.Component {
@@ -30,7 +29,6 @@ class NavBar extends React.Component {
     super()
     this.state =
       {
-        auth: true,
         anchorEl: null,
       }
     this.handleClick = this.handleClick.bind(this);
@@ -42,7 +40,7 @@ class NavBar extends React.Component {
     this.setState(
       {
         isOpen: true,
-        anchorE1: evt.currentTarget
+        anchorEl: evt.currentTarget
       }
     )
   }
@@ -52,36 +50,46 @@ class NavBar extends React.Component {
   };
   render() {
     const { classes } = this.props;
-
+    const { anchorEl, isOpen } = this.state
+    const open = Boolean(anchorEl);
 
     return (
       <div >
 
-        <AppBar>
+        <AppBar position="static">
           <IconButton className={classes.menuButton} onClick={this.handleClick}>
             <MenuIcon />
           </IconButton>
-          <Menu open={this.state.isOpen}
+          <Menu open={open}
             onClose={this.handleClose}
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
           >
-            <MenuItem>
+            <MenuItem onClick={this.handleClose}>
               <Link to='/'>
                 <h4>Home</h4>
               </Link>
 
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={this.handleClose}>
               <Link to='/projects'>
                 <h4>Projects</h4>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem onClick={this.handleClose}>
               <Link to='/aboutme'>
                 <h4> About Me</h4>
               </Link>
             </MenuItem>
 
-            <MenuItem>
+            <MenuItem onClick={this.handleClose}>
 
               <Link to='/photo-gallery'>
                 <h4>Photo Gallery</h4>
