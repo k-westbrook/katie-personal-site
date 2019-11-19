@@ -4,9 +4,11 @@ import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
+import Menu from '@material-ui/core/Menu';
+
+
 import App from './App';
-import { IconButton } from '@material-ui/core';
+import { Icon } from '@material-ui/core';
 
 const styles = {
   root: {
@@ -33,27 +35,26 @@ class NavBar extends Component {
   }
 
   handleClick(evt) {
-    let bool = this.state.isOpen;
-    console.log(bool)
     this.setState(
       {
-        isOpen: !bool,
+        isOpen: true,
         anchorE1: evt.currentTarget
       }
     )
   }
 
   handleClose = () => {
-    this.setState({ anchorEl: null });
+    this.setState({ anchorEl: null, isOpen: false });
   };
   render() {
     const { classes } = this.props;
-    console.log(this.state)
+    console.log("HERE", this.state)
     return (
       <div >
         <AppBar>
-          <IconButton className={classes.menuButton} onClick={this.handleClick}>
-          </IconButton>
+          <Icon className={classes.menuButton} onClick={this.handleClick}>
+
+          </Icon>
           <Menu open={this.state.isOpen}
             onClose={this.handleClose}
           >
