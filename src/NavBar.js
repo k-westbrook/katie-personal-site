@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import './App.css';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import MenuItem from "@material-ui/core/MenuItem";
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-
+import { Link } from 'react-router-dom'
 
 import App from './App';
 import { Icon } from '@material-ui/core';
@@ -22,17 +25,18 @@ const styles = {
     marginRight: 20,
   }
 }
-class NavBar extends Component {
+class NavBar extends React.Component {
   constructor() {
     super()
     this.state =
       {
-        isOpen: false,
-        anchorE1: null
+        auth: true,
+        anchorEl: null,
       }
     this.handleClick = this.handleClick.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
+
 
   handleClick(evt) {
     this.setState(
@@ -48,13 +52,15 @@ class NavBar extends Component {
   };
   render() {
     const { classes } = this.props;
-    console.log("HERE", this.state)
+
+
     return (
       <div >
-        <AppBar>
-          <Icon className={classes.menuButton} onClick={this.handleClick}>
 
-          </Icon>
+        <AppBar>
+          <IconButton className={classes.menuButton} onClick={this.handleClick}>
+            <MenuIcon />
+          </IconButton>
           <Menu open={this.state.isOpen}
             onClose={this.handleClose}
           >
