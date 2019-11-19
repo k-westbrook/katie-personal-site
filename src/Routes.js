@@ -10,7 +10,7 @@ const styles = {
   root: {
     flexGrow: 1,
     backgroundColor: "#37474f",
-    height: "100%",
+    minHeight: "100vh",
     width: "100%"
   }
 }

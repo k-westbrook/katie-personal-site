@@ -21,7 +21,7 @@ const theme = createMuiTheme({
   status: {
     danger: 'orange',
   },
-  height: "100%"
+  minHeight: "100vh"
 });
 
 class App extends Component {
