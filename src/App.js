@@ -3,14 +3,19 @@ import Routes from './Routes.js'
 import { BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './NavBar'
 import './App.css';
-import { MuiThemeProvider, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import green from '@material-ui/core/colors/green';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
     primary:
-      { main: '#9e9e9e' },
-    secondary: green,
+    {
+      main: '#9e9e9e',
+      light: "#fffde7"
+    },
+    secondary:
+    {
+      main: "#fffde7",
+    }
   },
   status: {
     danger: 'orange',

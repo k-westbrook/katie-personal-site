@@ -3,9 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage';
 
 
-/**
- * COMPONENT
- */
+
 class Routes extends Component {
 
 
