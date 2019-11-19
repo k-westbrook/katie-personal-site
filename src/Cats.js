@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
-
+import Typography from '@material-ui/core/Typography';
 const styles = {
-  root: {
-    flexGrow: 1,
-    backgroundColor: "#37474f",
-    height: "100%"
+
+  titleContainer:
+  {
+    textAlign: "Center"
   }
-}
+};
 
 
 class Cats extends Component {
@@ -19,8 +19,9 @@ class Cats extends Component {
     const { classes } = this.props;
     return (
       <div >
-        <h1>Cats
-      </h1>
+        <div className={classes.titleContainer}>
+          <Typography variant='h1'>Cats</Typography>
+        </div>
       </div>
     )
   }

@@ -10,7 +10,7 @@ const theme = createMuiTheme({
   palette: {
     primary:
     {
-      main: '#9e9e9e',
+      main: "#37474f",
       light: "#fffde7"
     },
     secondary:
@@ -21,7 +21,15 @@ const theme = createMuiTheme({
   status: {
     danger: 'orange',
   },
-  minHeight: "100vh"
+  typography:
+  {
+    h1: {
+      fontSize: '25vw',
+      color: "#e0f2f1"
+    },
+  },
+  minHeight: "100vh",
+  backgroundColor: "#37474f"
 });
 
 class App extends Component {

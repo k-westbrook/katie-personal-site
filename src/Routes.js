@@ -11,7 +11,8 @@ const styles = {
     flexGrow: 1,
     backgroundColor: "#37474f",
     minHeight: "100vh",
-    width: "100%"
+    width: "100vw",
+
   }
 }
 

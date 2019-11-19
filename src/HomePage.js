@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import { sizing } from '@material-ui/system';
-
+import { sizing, spacing } from '@material-ui/system';
+import Typography from '@material-ui/core/Typography';
 const styles = {
-  root: {
-    b: "0vh"
+
+  titleContainer:
+  {
+    textAlign: "Center"
   }
 };
 
@@ -16,9 +18,10 @@ class HomePage extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
-        <h1>home
-      </h1>
+      <div >
+        <div className={classes.titleContainer}>
+          <Typography variant='h1'>Home</Typography>
+        </div>
       </div>
     )
   }

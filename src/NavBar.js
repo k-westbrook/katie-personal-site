@@ -6,7 +6,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { sizing, spacing } from '@material-ui/system';
+
 
 const styles = {
   root: {
@@ -14,7 +16,9 @@ const styles = {
   },
   AppBar: {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    backgroundColor: "#e0f2f1",
+    minHeight: "10vh"
   },
   Menu:
   {
