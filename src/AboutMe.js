@@ -196,6 +196,57 @@ class AboutMe extends Component {
               </div>
 
             </div>
+            <div>
+              <Typography variant="h3" className={classes.subTitles}>Education</Typography>
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.list}>
+
+          <div className={classes.listItem}>
+            <div>
+              <CropDinIcon />
+            </div>
+            <div >
+              <div className={classes.jobTitle} >
+                <div >
+                  <div >
+                    <Typography variant='p'>Fullstack Academy</Typography>
+                  </div>
+                  <div >
+                    <Typography variant='p'>
+                      Immersive Fullstack Software Engineering Program</Typography>
+                  </div>
+                </div>
+                <div >
+                  <Typography variant='p'>February 2019</Typography>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div className={classes.listItem}>
+            <div>
+              <CropDinIcon />
+            </div>
+            <div >
+              <div className={classes.jobTitle} >
+                <div >
+                  <div >
+                    <Typography variant='p'>Texas A&M University</Typography>
+                  </div>
+                  <div >
+                    <Typography variant='p'>
+                      Bachelor of Science in Biology</Typography>
+                  </div>
+                </div>
+                <div >
+                  <Typography variant='p'>May 2010</Typography>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
