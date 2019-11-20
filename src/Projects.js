@@ -101,11 +101,13 @@ class Projects extends Component {
                       <LinkIcon></LinkIcon>
                     </Button>
                   </a>
-                  <a>
-                    <Button size="small" color="primary">
-                      <GitHubIcon></GitHubIcon>
-                    </Button>
-                  </a>
+                  {project.gitURL &&
+                    <a href={project.gitURL}>
+                      <Button size="small" color="primary">
+                        <GitHubIcon></GitHubIcon>
+                      </Button>
+                    </a>
+                  }
                 </CardActions>
               </Card>
 
