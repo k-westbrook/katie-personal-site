@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { sizing, border } from '@material-ui/system';
+import { sizing, border, borderColor } from '@material-ui/system';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -38,22 +38,31 @@ const styles =
   card:
   {
     width: "25vw",
-    minHeight: "40vh",
+    height: "55vh",
     marginRight: "3vw",
     marginBottom: "5vh",
-    backgroundColor: "#FAFAFA"
+    backgroundColor: "#FAFAFA",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    borderColor: "  #FF5722",
+    borderStyle: "solid"
   },
   cardContent:
   {
     display: "flex",
     flexDirection: "column",
     textAlign: "center",
-    padding: "1vh"
+    paddingTop: "1vh",
+    paddingLeft: "1vh",
+    paddingRight: "1vh",
+    height: "40vh"
   },
   projectTitle:
   {
     marginBottom: "1vh",
-    fontSize: "4vh"
+    fontSize: "3vh",
+    fontWeight: "bold"
   },
   projectImage:
   {
@@ -64,6 +73,14 @@ const styles =
   projectDescription:
   {
     fontSize: "2.5vh"
+  },
+  CardActions:
+  {
+    height: "15vh"
+  },
+  Icons:
+  {
+    fontSize: "2vw"
   }
 
 }
@@ -95,16 +112,16 @@ class Projects extends Component {
                   </CardContent>
                 </div>
 
-                <CardActions>
+                <CardActions className={classes.CardActions}>
                   <a href={project.link}>
                     <Button size="small" color="primary">
-                      <LinkIcon></LinkIcon>
+                      <LinkIcon className={classes.Icons}></LinkIcon>
                     </Button>
                   </a>
                   {project.gitURL &&
                     <a href={project.gitURL}>
                       <Button size="small" color="primary">
-                        <GitHubIcon></GitHubIcon>
+                        <GitHubIcon className={classes.Icons} ></GitHubIcon>
                       </Button>
                     </a>
                   }
