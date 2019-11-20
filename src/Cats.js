@@ -6,7 +6,8 @@ const styles = {
 
   titleContainer:
   {
-    textAlign: "Center"
+    textAlign: "Center",
+    marginTop: "11vh"
   }
 };
 
