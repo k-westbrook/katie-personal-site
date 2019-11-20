@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { sizing, border } from '@material-ui/system';
 
+const styles =
+{
+  title: {
+    marginTop: "11vh",
+    paddingTop: "4vh",
+    paddingLeft: "3vw"
+  }
 
-
+}
 class Projects extends Component {
 
   constructor() {
@@ -10,12 +19,17 @@ class Projects extends Component {
   }
 
   render() {
+    const { classes } = this.props;
     return (
-      <div></div>
+      <div>
+        <h1 className={classes.title}>
+          Projects
+        </h1>
+      </div>
     )
   }
 }
 
-export default Projects;
+export default withStyles(styles)(Projects);
 
 
