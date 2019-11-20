@@ -25,8 +25,8 @@ const styles = {
   },
   Menu:
   {
-    display: "flex"
-
+    display: "flex",
+    marginTop: "8vh"
 
   },
   MenuTitle:
