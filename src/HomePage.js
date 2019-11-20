@@ -55,7 +55,7 @@ const styles = {
   iconBottom:
   {
     marginLeft: "5vw",
-    fontSize: "5vw"
+    fontSize: "6vw"
   }
 
 };
@@ -82,7 +82,7 @@ class HomePage extends Component {
 
         </div >
         <div className={classes.infoContainer}>
-          <Typography className={classes.infoHome}>Katie Westbrook <br />Welcome to my personal site!</Typography>
+          <Typography className={classes.infoHome}>Katie Westbrook <br />Welcome to my personal site!<br /> Designed and Coded by Me</Typography>
           <div className={classes.iconContainer}>
             <PetsIcon className={classes.iconBottom} />
             <AirplanemodeActiveIcon className={classes.iconBottom} />
