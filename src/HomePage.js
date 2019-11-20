@@ -19,10 +19,7 @@ const styles = {
   },
   titleHome:
   {
-
-
     fontSize: "20vh"
-
   }
 
 };
