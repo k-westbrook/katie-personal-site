@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import { sizing } from '@material-ui/system';
+import { sizing, border } from '@material-ui/system';
 import keyboard from './keyboard.jpg';
 import Typography from '@material-ui/core/Typography';
 import CropDinIcon from '@material-ui/icons/CropDin';
@@ -57,21 +57,25 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     marginTop: "8vh",
-    marginLeft: "3vw"
+    marginLeft: "3vw",
+    width: "80vw"
   },
   listItem:
   {
     color: "#FFFFFF",
     fontSize: "3vh",
     marginBottom: "8vh",
-    display: "flex"
-  },
-  experienceItems:
-  {
-    flex: "display",
+    display: "flex",
     flexDirection: "row",
-    justifyContent: "flex-end",
+    width: "80vw",
     borderStyle: "solid"
+  },
+  jobTitle:
+  {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: " space-between",
+    width: "70vw"
   }
 };
 
@@ -105,13 +109,24 @@ class AboutMe extends Component {
                 <div>
                   <CropDinIcon />
                 </div>
-                <div className={classes.experienceItems}>
-                  <div>
-                    <Typography variant='p'>Software Engineer Apprentice
-                <br /> Microsft via Inconsulting Inc.</Typography>
+                <div >
+                  <div className={classes.jobTitle} >
+                    <div >
+                      <div >
+                        <Typography variant='p'>Software Engineer Apprentice</Typography>
+                      </div>
+                      <div >
+                        <Typography variant='p'>
+                          Microsft via Inconsulting Inc.</Typography>
+                      </div>
+                    </div>
+                    <div >
+                      <Typography variant='p'>April 2019 - August 2019</Typography>
+                    </div>
+
                   </div>
                   <div>
-                    <Typography variant='p'>April 2019 - August 2019</Typography>
+                    <Typography variant='p'>Experience</Typography>
                   </div>
                 </div>
               </div>
