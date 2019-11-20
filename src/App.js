@@ -30,7 +30,13 @@ const theme = createMuiTheme({
   },
   minHeight: "100vh",
   minWidth: "100vw",
-  backgroundColor: "#37474f"
+  backgroundColor: "#37474f",
+  overrides: {
+    MuiLink: {
+      underline: "none"
+    }
+  }
+
 });
 
 class App extends Component {
