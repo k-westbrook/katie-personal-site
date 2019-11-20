@@ -14,6 +14,15 @@ import Button from '@material-ui/core/Button';
 
 const styles =
 {
+  mainTitle:
+  {
+    fontSize: "15vh",
+    textAlign: "center",
+    marginTop: "3vh",
+    color: "#FFFFFF",
+    marginBottom: "5vh"
+
+  },
   projectPageContainer: {
     marginTop: "11vh",
     padding: '5vh'
@@ -69,6 +78,10 @@ class Projects extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.projectPageContainer}>
+        <div>
+
+          <Typography variant='h1' className={classes.mainTitle}>Projects</Typography>
+        </div>
         <div className={classes.projectsCardContainer}>
           {projects.map(project => {
             return (
@@ -88,7 +101,7 @@ class Projects extends Component {
                       <LinkIcon></LinkIcon>
                     </Button>
                   </a>
-                  <a >
+                  <a>
                     <Button size="small" color="primary">
                       <GitHubIcon></GitHubIcon>
                     </Button>
@@ -101,9 +114,7 @@ class Projects extends Component {
 
 
         </div>
-        <h1>
-          Projects
-        </h1>
+
       </div>
     )
   }
