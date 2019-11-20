@@ -47,7 +47,8 @@ const styles = {
   subTitles:
   {
     fontSize: "7vh",
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+    marginLeft: "3vw"
 
   },
   list:
@@ -126,7 +127,70 @@ class AboutMe extends Component {
 
                   </div>
                   <div>
-                    <Typography variant='p'>Experience</Typography>
+                    <Typography variant='p'>• Implemented t-SQL and Kusto queries to provide data set for Azure Recommendations Dashboard.<br />
+                      • Created relationships between models and modified existing PowerBI Dashboard to show additional data.<br />
+                      • Collaborated with engineering team and project managers to plan sprint stories and system design.<br />
+                      • Presented technical information at organization wide meeting as well as demo features at immediate team's end of sprint meetings.
+                    </Typography>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.listItem}>
+                <div>
+                  <CropDinIcon />
+                </div>
+                <div >
+                  <div className={classes.jobTitle} >
+                    <div >
+                      <div >
+                        <Typography variant='p'>Licensing Analyst II</Typography>
+                      </div>
+                      <div >
+                        <Typography variant='p'>
+                          Microsft via Artech Consulting LLC</Typography>
+                      </div>
+                    </div>
+                    <div >
+                      <Typography variant='p'>February 2017 - September 2018</Typography>
+                    </div>
+
+                  </div>
+                  <div>
+                    <Typography variant='p'>• Leveraged Excel to develop, process, and analyze highly customized multi-million-dollar volume licensing financial contracts based on customer's specific needs and deadlines.<br />
+                      • Analyzed and reviewed agreements to ensure maintenance of quality and meet established compliance policies in a dynamic technology atmosphere.<br />
+                      • Mentored new hires and improved internal education materials to streamline training process.<br />
+                      • Conducted user acceptance testing for functional modifications of application and reported findings and recommendations.
+                    </Typography>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.listItem}>
+                <div>
+                  <CropDinIcon />
+                </div>
+                <div >
+                  <div className={classes.jobTitle} >
+                    <div >
+                      <div >
+                        <Typography variant='p'>Market Research Intern</Typography>
+                      </div>
+                      <div >
+                        <Typography variant='p'>
+                          Bairexport</Typography>
+                      </div>
+                    </div>
+                    <div >
+                      <Typography variant='p'>May 2016 - June 2016</Typography>
+                    </div>
+
+                  </div>
+                  <div>
+                    <Typography variant='p'>• Maintained website and social media platform used to inform customers of current events.<br />
+                      • Troubleshot technical data entry issues with client lists on email marketing platform.<br />
+                      • Revised client list to identify potential leads to expand reach.<br />
+                      • Investigated and created database for outreach of international importers.<br />
+                      • Promoted government financial program for entrepreneurs as company representative at a design expo
+                    </Typography>
                   </div>
                 </div>
               </div>
