@@ -20,7 +20,9 @@ const styles =
     textAlign: "center",
     marginTop: "3vh",
     color: "#FFFFFF",
-    marginBottom: "5vh"
+    marginBottom: "8vh",
+    borderBottomStyle: "solid",
+    paddingBottom: "2vh"
 
   },
   projectPageContainer: {
@@ -38,7 +40,7 @@ const styles =
   card:
   {
     width: "25vw",
-    height: "55vh",
+    height: "75vh",
     marginRight: "3vw",
     marginBottom: "5vh",
     backgroundColor: "#FAFAFA",
@@ -54,7 +56,7 @@ const styles =
     paddingTop: "1vh",
     paddingLeft: "1vh",
     paddingRight: "1vh",
-    height: "40vh"
+    height: "60vh"
   },
   projectTitle:
   {
@@ -65,8 +67,8 @@ const styles =
   projectImage:
   {
     marginBottom: "3vh",
-    height: "20vh",
-    width: "23.5vw"
+    height: "auto",
+    width: "100%"
   },
   projectDescription:
   {
