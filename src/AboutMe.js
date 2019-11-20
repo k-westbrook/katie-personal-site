@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
 import keyboard from './keyboard.jpg';
 import coding from './coding.jpg'
+import books from './books.jpg'
 import Typography from '@material-ui/core/Typography';
 import CropDinIcon from '@material-ui/icons/CropDin';
 
@@ -34,6 +35,21 @@ const styles = {
   {
 
     backgroundImage: `url(${coding})`,
+    backgroundColor: "#37474f",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    borderStyle: "solid",
+    height: "80vh",
+    width: "100vw"
+
+
+  },
+  imageContainer3:
+  {
+
+    backgroundImage: `url(${books})`,
     backgroundColor: "#37474f",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -238,6 +254,8 @@ class AboutMe extends Component {
               </div>
 
             </div>
+            <div className={classes.imageContainer3}></div>
+
             <div>
               <Typography variant="h3" className={classes.subTitles}>Education</Typography>
             </div>
@@ -268,6 +286,7 @@ class AboutMe extends Component {
               </div>
             </div>
           </div>
+
           <div className={classes.listItem}>
             <div>
               <CropDinIcon />
