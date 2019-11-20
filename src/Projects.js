@@ -44,9 +44,7 @@ const styles =
     backgroundColor: "#FAFAFA",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
-    borderColor: "  #FF5722",
-    borderStyle: "solid"
+    justifyContent: "space-between"
   },
   cardContent:
   {
@@ -80,7 +78,7 @@ const styles =
   },
   Icons:
   {
-    fontSize: "2vw"
+    fontSize: "2.5vw"
   }
 
 }
