@@ -71,7 +71,7 @@ class HomePage extends Component {
       <div>
         <div className={classes.homePageContainer}>
           <div>
-            <CardMedia className={classes.video} component="video" src={sea} autoPlay loop>
+            <CardMedia className={classes.video} component="video" src={sea} autoplay="autoplay" loop>
 
             </CardMedia>
           </div>
