@@ -20,6 +20,15 @@ const styles = {
   titleHome:
   {
     fontSize: "20vh"
+  },
+  infoHome:
+  {
+    backgroundColor: "rgb(47,79,79);opacity:0.8",
+    minWidth: "200%"
+  },
+  infoContainer:
+  {
+
   }
 
 };
@@ -42,7 +51,9 @@ class HomePage extends Component {
         <div className={classes.titleContainer}>
           <Typography className={classes.titleHome} variant='h1' > Welcome</Typography>
         </div>
-
+        <div>
+          <Typography className={classes.infoHome}>I wanted a place to compile and share my photos. <br />Click on Top Right Menu to see categories</Typography>
+        </div>
       </div >
     )
   }
