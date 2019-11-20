@@ -23,7 +23,7 @@ const styles =
   card:
   {
     width: "25vw",
-    height: "55vh",
+    minHeight: "40vh",
     marginRight: "3vw",
     marginBottom: "5vh"
   },
@@ -44,7 +44,7 @@ const styles =
   {
     marginBottom: "3vh",
     height: "20vh",
-    width: "20vw",
+    width: "23.5vw",
     borderStyle: "solid"
   },
   projectDescription:
