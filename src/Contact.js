@@ -2,23 +2,13 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, spacing } from '@material-ui/system';
 import Typography from '@material-ui/core/Typography';
-import sea from './sea.mp4';
-import CardMedia from '@material-ui/core/CardMedia';
-import PetsIcon from '@material-ui/icons/Pets';
-import FireplaceTwoToneIcon from '@material-ui/icons/FireplaceTwoTone';
-import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
-import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import Button from '@material-ui/core/Button';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
+import Link from '@material-ui/core/Link';
 
 const styles = {
   mainTitle:
@@ -50,8 +40,8 @@ const styles = {
   {
     display: "flex",
     flexDirection: "column",
-    borderStyle: "solid"
-  }, cardHolder:
+  },
+  cardHolder:
   {
     display: "flex",
     justifyContent: "center"
@@ -80,37 +70,45 @@ class Contact extends Component {
         </div>
         <div className={classes.CardContainer}>
           <div className={classes.cardHolder}>
-            <Card className={classes.Card}>
-              <CardActionArea>
-                <CardContent className={classes.CardContent}>
-                  <MailOutlineIcon />
-                  <Typography>Email Me @ kcheriewestbrook@gmail.com</Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+            <Link underline="none" a href="mailto:kcheriewestbrook@gmail.com">
+              <Card className={classes.Card}>
+                <CardActionArea>
+                  <CardContent className={classes.CardContent}>
+                    <MailOutlineIcon />
+                    <Typography variant="p">Email Me at kcheriewestbrook@gmail.com</Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
           </div>
           <div className={classes.cardHolder}>
-            <Card className={classes.Card}>
-              <CardActionArea>
-                <CardContent className={classes.CardContent}>
-                  <LinkedInIcon />
-                  <Typography>Connect with me on LinkedIn</Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+            <Link underline="none" a href=" https://www.linkedin.com/in/katherine-westbrook/">
+              <Card className={classes.Card}>
+                <CardActionArea>
+                  <CardContent className={classes.CardContent}>
+                    <LinkedInIcon />
+                    <Typography variant="p">Connect with me on LinkedIn</Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
           </div>
           <div className={classes.cardHolder}>
-            <Card className={classes.Card}>
-              <CardActionArea>
-                <CardContent className={classes.CardContent}>
-                  <GitHubIcon />
-                  <Typography>Check out my GitHub Account</Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+            <Link underline="none" a href="https://github.com/k-westbrook">
+              <Card className={classes.Card}>
+
+                <CardActionArea>
+                  <CardContent className={classes.CardContent}>
+                    <GitHubIcon />
+                    <Typography variant="p">Check out my GitHub Account</Typography>
+                  </CardContent>
+                </CardActionArea>
+
+              </Card>
+            </Link>
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }
