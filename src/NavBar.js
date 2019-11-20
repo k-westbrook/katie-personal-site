@@ -43,11 +43,7 @@ const styles = {
   {
     width: "15vw",
     height: "10vh"
-  },
-  link:
-  {
-    underline: "none",
-  },
+  }
 
 }
 class NavBar extends React.Component {
@@ -103,19 +99,19 @@ class NavBar extends React.Component {
             }}
           >
             <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
-              <Link component="a" className={classes.link} href='/'>
+              <Link underline="none" component="a" href='/'>
                 <Typography variant='h4'>Home</Typography>
 
               </Link>
 
             </MenuItem>
             <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
-              <Link className={classes.link} href='/aboutMe'>
+              <Link underline="none" href='/aboutMe'>
                 <Typography variant='h4'>About me</Typography>
               </Link>
             </MenuItem>
             <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
-              <Link className={classes.link} href='/projects'>
+              <Link underline="none" href='/projects'>
                 <Typography variant='h4'>My Projects</Typography>
               </Link>
             </MenuItem>
