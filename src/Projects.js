@@ -7,7 +7,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 
 const styles =
@@ -71,16 +72,24 @@ class Projects extends Component {
           {projects.map(project => {
             return (
               <Card className={classes.card}>
-                <CardActionArea>
-                  <div className={classes.cardContent}>
-                    <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
-                    <CardContent>
-                      <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
-                      <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
-                    </CardContent>
-                  </div>
-                </CardActionArea>
+
+                <div className={classes.cardContent}>
+                  <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
+                  <CardContent>
+                    <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
+                    <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
+                  </CardContent>
+                </div>
+
+                <CardActions>
+                  <a href={project.link}>
+                    <Button size="small" color="primary">
+                      See App
+         </Button>
+                  </a>
+                </CardActions>
               </Card>
+
             )
           })}
 
