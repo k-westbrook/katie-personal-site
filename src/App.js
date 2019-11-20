@@ -29,6 +29,7 @@ const theme = createMuiTheme({
     },
   },
   minHeight: "100vh",
+  minWidth: "100vw",
   backgroundColor: "#37474f"
 });
 
