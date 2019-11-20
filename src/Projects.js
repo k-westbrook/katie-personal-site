@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
+import Paper from '@material-ui/core/Paper';
 
 const styles =
 {
-  title: {
+  projectPageContainer: {
     marginTop: "11vh",
-    paddingTop: "4vh",
-    paddingLeft: "3vw"
+    padding: '5vh'
   }
 
 }
@@ -21,8 +21,12 @@ class Projects extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
-        <h1 className={classes.title}>
+      <div className={classes.projectPageContainer}>
+        <div>
+          <Paper>Hello</Paper>
+
+        </div>
+        <h1>
           Projects
         </h1>
       </div>
