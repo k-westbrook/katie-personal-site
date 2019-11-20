@@ -21,9 +21,36 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     borderStyle: "solid",
-    height: "100vh",
+    height: "80vh",
     width: "100vw",
 
+
+  },
+  resumeContainer: {
+    marginLeft: "3vw"
+  },
+  mainTitle:
+  {
+    fontSize: "10vh",
+    textAlign: "center",
+    marginTop: "3vh",
+    color: "#FFFFFF"
+  },
+  subTitles:
+  {
+    fontSize: "7vh",
+    color: "#FFFFFF"
+
+  },
+  list:
+  {
+    color: "#FFFFFF",
+    fontSize: "3vh"
+  },
+  expeience:
+  {
+    color: "#FFFFFF",
+    fontSize: "3vh"
   }
 };
 
@@ -42,8 +69,22 @@ class AboutMe extends Component {
           <div className={classes.imageContainer}></div>
 
         </div>
-        <div>
-          <Typography>About meScroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling. Tip: Try to remove the background-attachment property to remove the scrolling effect.</Typography>
+        <div className={classes.resumeContainer}>
+          <div>
+
+            <Typography variant='h1' className={classes.mainTitle}>About Me</Typography>
+          </div>
+          <div>
+            <Typography variant="h3" className={classes.subTitles}>Experience</Typography>
+          </div>
+          <div>
+            <ul className={classes.list}>
+              <li>
+                <Typography className={classes.expeience} variant='p'>Software Engineer Apprentice
+                <br /> Microsft via Inconsulting Inc.</Typography>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>

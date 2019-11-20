@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     h1: {
       fontSize: '25vw',
       color: "#e0f2f1"
-    },
+    }
   },
   minHeight: "100vh",
   minWidth: "100vw",
