@@ -11,25 +11,29 @@ const styles = {
   {
 
     marginTop: "11vh",
-    display: "flex"
+    display: "flex",
+    width: "100vw"
 
   },
   imageContainer:
   {
 
     backgroundImage: `url(${keyboard})`,
+    backgroundColor: "#37474f",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     borderStyle: "solid",
     height: "80vh",
-    width: "100vw",
+    width: "100vw"
 
 
   },
   resumeContainer: {
-    paddingLeft: "3vw"
+
+    width: "100vw",
+
 
   },
   mainTitle:
@@ -37,7 +41,8 @@ const styles = {
     fontSize: "10vh",
     textAlign: "center",
     marginTop: "3vh",
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+
   },
   subTitles:
   {
@@ -78,7 +83,7 @@ class AboutMe extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div >
 
 
         <div className={classes.titleContainer}>
