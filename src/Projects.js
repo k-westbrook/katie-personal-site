@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
-import Paper from '@material-ui/core/Paper';
+import Card from '@material-ui/core/Card';
 
 const styles =
 {
@@ -23,7 +23,12 @@ class Projects extends Component {
     return (
       <div className={classes.projectPageContainer}>
         <div>
-          <Paper>Hello</Paper>
+          {projects.map(project => {
+            return (
+              <Card>{project.name}</Card>
+            )
+          })}
+
 
         </div>
         <h1>
