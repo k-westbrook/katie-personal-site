@@ -3,6 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
 import keyboard from './keyboard.jpg';
 import Typography from '@material-ui/core/Typography';
+import CropDinIcon from '@material-ui/icons/CropDin';
+
 const styles = {
 
   titleContainer:
@@ -27,7 +29,8 @@ const styles = {
 
   },
   resumeContainer: {
-    marginLeft: "3vw"
+    paddingLeft: "3vw"
+
   },
   mainTitle:
   {
@@ -45,12 +48,25 @@ const styles = {
   list:
   {
     color: "#FFFFFF",
-    fontSize: "3vh"
+    fontSize: "3vh",
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "8vh",
+    marginLeft: "3vw"
   },
-  expeience:
+  listItem:
   {
     color: "#FFFFFF",
-    fontSize: "3vh"
+    fontSize: "3vh",
+    marginBottom: "8vh",
+    display: "flex"
+  },
+  experienceItems:
+  {
+    flex: "display",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    borderStyle: "solid"
   }
 };
 
@@ -78,16 +94,28 @@ class AboutMe extends Component {
             <Typography variant="h3" className={classes.subTitles}>Experience</Typography>
           </div>
           <div>
-            <ul className={classes.list}>
-              <li>
-                <Typography className={classes.expeience} variant='p'>Software Engineer Apprentice
+            <div className={classes.list}>
+
+              <div className={classes.listItem}>
+                <div>
+                  <CropDinIcon />
+                </div>
+                <div className={classes.experienceItems}>
+                  <div>
+                    <Typography variant='p'>Software Engineer Apprentice
                 <br /> Microsft via Inconsulting Inc.</Typography>
-              </li>
-            </ul>
+                  </div>
+                  <div>
+                    <Typography variant='p'>April 2019 - August 2019</Typography>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
-      </div>
+      </div >
     )
   }
 
