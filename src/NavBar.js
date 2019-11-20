@@ -25,7 +25,7 @@ const styles = {
   },
   Menu:
   {
-    display: "flex",
+    display: "flex"
 
 
   },
@@ -41,12 +41,12 @@ const styles = {
   },
   MenuItem:
   {
-    width: "15vw"
+    width: "15vw",
+    height: "10vh"
   },
   link:
   {
     underline: "none",
-    color: "#FF5722"
   },
 
 }
@@ -109,12 +109,12 @@ class NavBar extends React.Component {
               </Link>
 
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
               <Link className={classes.link} href='/aboutMe'>
                 <Typography variant='h4'>About me</Typography>
               </Link>
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
               <Link className={classes.link} href='/projects'>
                 <Typography variant='h4'>My Projects</Typography>
               </Link>
