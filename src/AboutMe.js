@@ -33,8 +33,6 @@ const styles = {
   resumeContainer: {
 
     width: "100vw",
-
-
   },
   mainTitle:
   {
@@ -43,6 +41,14 @@ const styles = {
     marginTop: "3vh",
     color: "#FFFFFF",
 
+  },
+  aboutMe:
+  {
+    fontSize: "4vh",
+    color: "#FFFFFF",
+    marginLeft: "3vw",
+    marginTop: "3vh",
+    marginBottom: "3vh"
   },
   subTitles:
   {
@@ -69,7 +75,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     width: "80vw",
-    borderStyle: "solid"
+
   },
   jobTitle:
   {
@@ -99,6 +105,16 @@ class AboutMe extends Component {
           <div>
 
             <Typography variant='h1' className={classes.mainTitle}>About Me</Typography>
+          </div>
+          <div>
+            <div>
+              <Typography variant="h3" className={classes.subTitles}>Summary</Typography>
+            </div>
+            <div className={classes.aboutMe}>
+              <Typography variant="p"  >Hello! I am a fullstack developer who has a penchant for front end software engineering. I began my professional journey to software engineering by taking onlince classes in basic SQL. After a few months of a Android Basics class, I applied and got accepted to Grace Hopper Program at Fullstack Academy in NYC. To be accepted, you need to not only pass a coding challenge but a live technical interview.<br /><br />
+                At the immersive coding bootcamp, I was able to learn and apply the fullstack<b><i> (JavaScript, React/Redux, PostgreSQL, Sequelize/ORM, and NodeJS/Express).</i></b> I then finished the Microsoft LEAP Apprenticeship Program which is like an internship for people not generally represented in tech.</Typography>
+
+            </div>
           </div>
           <div>
             <Typography variant="h3" className={classes.subTitles}>Experience</Typography>
