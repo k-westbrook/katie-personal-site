@@ -128,13 +128,15 @@ const projects = [
     name: 'piggybank',
     imageURL: 'https://res.cloudinary.com/dmp2crnzz/image/upload/v1554320022/personal-site/Screen_Shot_2019-04-03_at_12.32.46_PM.png',
     description: "A financial web app that allows visualization of a user's finances and budget creation using Plaid API and Recharts",
-    link: 'https://piggy-bank-app.herokuapp.com/'
+    link: 'https://piggy-bank-app.herokuapp.com/',
+    gitURL: 'https://github.com/piggybank-capstone/piggybank'
   },
   {
     name: 'QuikExlpr',
     imageURL: 'https://res.cloudinary.com/dmp2crnzz/image/upload/v1554320023/personal-site/Screen_Shot_2019-04-03_at_12.32.10_PM.png',
     description: 'A web app that finds a user location via IP address and recommends a destination with weather and activity information using third party APIs',
-    link: 'https://quikexplr.herokuapp.com/'
+    link: 'https://quikexplr.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/quikexplr'
   },
   {
     name: 'Me and Mongo',
@@ -146,7 +148,8 @@ const projects = [
     name: 'West Coast Matching Game',
     imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1564121444/personal-site/west-coast.png",
     description: 'A concentration style game that uses React',
-    link: 'https://west-coast-matching-game.herokuapp.com/'
+    link: 'https://west-coast-matching-game.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/gamer'
   },
   {
     name: 'Third-Party API: Using OpenWeatherMap to Create a Simple App',
@@ -166,21 +169,24 @@ const projects = [
     name: 'i-agreatable',
     imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1566438724/personal-site/i-agreatable.png",
     description: 'A web app that uses AWS Lambda, AWS API Gateway, and RDS Database to give reviews of restaurants. Visitors can make comments.',
-    link: 'https://i-agreatable.herokuapp.com/'
+    link: 'https://i-agreatable.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/i-agreatable'
   },
   {
     name: 'i-agreatable API',
     imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1566439136/personal-site/Restaurant-API.png"
     ,
     description: 'Public API that returns restaurants, ratings, reviews and other data points. Made by using AWS Lambda and AWS API Gateway',
-    link: 'https://hclla7yjk3.execute-api.us-west-1.amazonaws.com/Production'
+    link: 'https://hclla7yjk3.execute-api.us-west-1.amazonaws.com/Production',
+    gitURL: 'https://github.com/k-westbrook/RestaurantsLambdaFunction1/blob/master/index.js'
   },
   {
     name: 'Help My Data Structures!',
     imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1567057910/personal-site/help-my-ds.png"
     ,
     description: "Web App that lets user learn about data structures while executing and visualizing how each data structure works. ",
-    link: 'https://help-my-data-structures.herokuapp.com/'
+    link: 'https://help-my-data-structures.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/help-my-data-structure'
 
   },
   {
@@ -188,7 +194,8 @@ const projects = [
     imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1573062096/personal-site/on-your-mind.png"
     ,
     description: "Web App that lets user post any comment on their mind. Uses React, AWS Lambda/API Gateway and DynamoDB. ",
-    link: 'https://whats-on-your-mind.herokuapp.com/'
+    link: 'https://whats-on-your-mind.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/what-on-your-mind'
 
   }
 
