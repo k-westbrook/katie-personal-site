@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
+import { Slide } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 const styles = {
 
@@ -12,7 +13,7 @@ const styles = {
 };
 
 
-class Cats extends Component {
+class AboutMe extends Component {
 
 
 
@@ -21,7 +22,9 @@ class Cats extends Component {
     return (
       <div >
         <div className={classes.titleContainer}>
-          <Typography variant='h1'>Cats</Typography>
+          <Typography variant='h1'>Katie</Typography>
+        </div>
+        <div>
         </div>
       </div>
     )
@@ -31,4 +34,4 @@ class Cats extends Component {
 }
 
 
-export default withStyles(styles)(Cats)
+export default withStyles(styles)(AboutMe)

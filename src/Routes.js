@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage';
-import Cats from './Cats'
+import AboutMe from './AboutMe'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
 
@@ -26,7 +26,7 @@ class Routes extends Component {
       <div className={classes.root}>
         <Switch >
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/cats" component={Cats} />
+          <Route exact path="/aboutMe" component={AboutMe} />
 
         </Switch>
       </div>

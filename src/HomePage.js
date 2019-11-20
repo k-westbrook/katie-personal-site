@@ -82,7 +82,7 @@ class HomePage extends Component {
 
         </div >
         <div className={classes.infoContainer}>
-          <Typography className={classes.infoHome}>A place to compile and share my photos. <br />Click on Top Right Menu to see categories</Typography>
+          <Typography className={classes.infoHome}>Katie Westbrook <br />Welcome to my personal site!</Typography>
           <div className={classes.iconContainer}>
             <PetsIcon className={classes.iconBottom} />
             <AirplanemodeActiveIcon className={classes.iconBottom} />

@@ -103,8 +103,8 @@ class NavBar extends React.Component {
 
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-              <Link href='/cats'>
-                <h4> Cats</h4>
+              <Link href='/aboutMe'>
+                <h4> About Me</h4>
               </Link>
             </MenuItem>
           </Menu>
