@@ -7,7 +7,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { Link } from 'react-router-dom';
+import LinkIcon from '@material-ui/icons/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from '@material-ui/core/Button';
 
 
@@ -84,8 +85,13 @@ class Projects extends Component {
                 <CardActions>
                   <a href={project.link}>
                     <Button size="small" color="primary">
-                      See App
-         </Button>
+                      <LinkIcon></LinkIcon>
+                    </Button>
+                  </a>
+                  <a >
+                    <Button size="small" color="primary">
+                      <GitHubIcon></GitHubIcon>
+                    </Button>
                   </a>
                 </CardActions>
               </Card>
