@@ -16,6 +16,8 @@ import CardContent from '@material-ui/core/CardContent';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from '@material-ui/core/Button';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 const styles = {
@@ -34,6 +36,26 @@ const styles = {
     marginTop: "11vh",
     padding: '5vh'
   },
+  CardContent:
+  {
+    display: "flex",
+
+  },
+  Card:
+  {
+    marginBottom: "4vh",
+    width: "30vw"
+  },
+  CardContainer:
+  {
+    display: "flex",
+    flexDirection: "column",
+    borderStyle: "solid"
+  }, cardHolder:
+  {
+    display: "flex",
+    justifyContent: "center"
+  }
 }
 
 
@@ -56,27 +78,38 @@ class Contact extends Component {
 
           <Typography variant='h1' className={classes.mainTitle}>Contact Me</Typography>
         </div>
-        <Card>
-          <CardActionArea>
-            <CardContent>
-              <Typography>Email Me @ kcheriewestbrook@gmail.com</Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card>
-          <CardActionArea>
-            <CardContent>
-              <Typography>Connect with me on LinkedIn</Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card>
-          <CardActionArea>
-            <CardContent>
-              <Typography>Check out my GitHub Account</Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+        <div className={classes.CardContainer}>
+          <div className={classes.cardHolder}>
+            <Card className={classes.Card}>
+              <CardActionArea>
+                <CardContent className={classes.CardContent}>
+                  <MailOutlineIcon />
+                  <Typography>Email Me @ kcheriewestbrook@gmail.com</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+          <div className={classes.cardHolder}>
+            <Card className={classes.Card}>
+              <CardActionArea>
+                <CardContent className={classes.CardContent}>
+                  <LinkedInIcon />
+                  <Typography>Connect with me on LinkedIn</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+          <div className={classes.cardHolder}>
+            <Card className={classes.Card}>
+              <CardActionArea>
+                <CardContent className={classes.CardContent}>
+                  <GitHubIcon />
+                  <Typography>Check out my GitHub Account</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+        </div>
       </div>
     )
   }
