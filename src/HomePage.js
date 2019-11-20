@@ -6,11 +6,25 @@ import sea from './sea.mp4';
 import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = {
-
+  homePageContainer:
+  {
+    position: "relative"
+  },
   titleContainer:
   {
-    textAlign: "Center"
+    textAlign: "Center",
+    position: "absolute",
+    top: "60%",
+    left: "25%"
+  },
+  titleHome:
+  {
+
+
+    fontSize: "20vh"
+
   }
+
 };
 
 
@@ -21,15 +35,15 @@ class HomePage extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div >
+      <div className={classes.homePageContainer}>
         <div>
-          <CardMedia component="video" src={sea} autoPlay>
+          <CardMedia component="video" src={sea} autoPlay loop>
 
           </CardMedia>
         </div>
 
         <div className={classes.titleContainer}>
-          <Typography variant='h1'>Home</Typography>
+          <Typography className={classes.titleHome} variant='h1' > Welcome</Typography>
         </div>
 
       </div >
