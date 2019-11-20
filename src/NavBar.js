@@ -18,7 +18,8 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     backgroundColor: "#e0f2f1",
-    minHeight: "10vh"
+    minHeight: "10vh",
+    borderStyle: "solid",
   },
   Menu:
   {

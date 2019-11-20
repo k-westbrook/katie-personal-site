@@ -8,6 +8,7 @@ import PetsIcon from '@material-ui/icons/Pets';
 import FireplaceTwoToneIcon from '@material-ui/icons/FireplaceTwoTone';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 
 const styles = {
@@ -34,7 +35,7 @@ const styles = {
   },
   infoHome:
   {
-    fontSize: "3vh"
+    fontSize: "4vh"
   },
   infoContainer:
   {
@@ -43,13 +44,14 @@ const styles = {
     borderStyle: "solid",
     alignContent: "center",
     padding: "3vw",
-    color: "  #FFFFFF"
+    color: "  #FFFFFF",
+    justifyContent: "space-between"
   },
   iconContainer:
   {
     display: "flex",
     flexDirection: "row",
-    marginLeft: "2vw"
+    // marginLeft: "2vw"
   },
   iconBottom:
   {
@@ -81,11 +83,13 @@ class HomePage extends Component {
 
         </div >
         <div className={classes.infoContainer}>
-          <Typography className={classes.infoHome}>I wanted a place to compile and share my photos. <br />Click on Top Right Menu to see categories</Typography>
+          <Typography className={classes.infoHome}>A place to compile and share my photos. <br />Click on Top Right Menu to see categories</Typography>
           <div className={classes.iconContainer}>
             <PetsIcon className={classes.iconBottom} />
             <AirplanemodeActiveIcon className={classes.iconBottom} />
             <FireplaceTwoToneIcon className={classes.iconBottom} />
+            <BrightnessLowIcon className={classes.iconBottom} />
+            <EmojiPeopleIcon className={classes.iconBottom} />
           </div>
         </div>
       </div>
