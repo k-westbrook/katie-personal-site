@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
 import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import { CardMedia } from 'material-ui';
+
 
 const styles =
 {
@@ -14,6 +17,7 @@ const styles =
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+    justifyContent: "space-between"
 
   },
   card:
@@ -22,6 +26,10 @@ const styles =
     height: "15vh",
     marginRight: "3vw",
     marginBottom: "5vh"
+  },
+  cardContent:
+  {
+
   }
 
 }
@@ -39,7 +47,12 @@ class Projects extends Component {
         <div className={classes.projectsCardContainer}>
           {projects.map(project => {
             return (
-              <Card className={classes.card}>{project.name}</Card>
+              <Card className={classes.card}>
+                <div className={classes.cardContent}>
+                  <Typography variant="h4">{project.name}</Typography>
+                  <CardMedia src={project.imageURL} component='image' />
+                </div>
+              </Card>
             )
           })}
 
