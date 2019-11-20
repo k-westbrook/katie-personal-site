@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Contact from './Contact'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
 
@@ -29,6 +30,7 @@ class Routes extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/aboutMe" component={AboutMe} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contactMe" component={Contact} />
 
         </Switch>
       </div>

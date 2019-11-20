@@ -115,6 +115,11 @@ class NavBar extends React.Component {
                 <Typography variant='h4'>My Projects</Typography>
               </Link>
             </MenuItem>
+            <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
+              <Link underline="none" href='/contactMe'>
+                <Typography variant='h4'>Contact Me</Typography>
+              </Link>
+            </MenuItem>
           </Menu>
 
         </AppBar>
