@@ -22,14 +22,35 @@ const styles =
   },
   card:
   {
-    width: "20vw",
-    height: "15vh",
+    width: "25vw",
+    height: "55vh",
     marginRight: "3vw",
     marginBottom: "5vh"
   },
   cardContent:
   {
-
+    display: "flex",
+    flexDirection: "column",
+    textAlign: "center",
+    padding: "1vh"
+  },
+  projectTitle:
+  {
+    marginBottom: "1vh",
+    fontSize: "4vh",
+    borderStyle: "solid"
+  },
+  projectImage:
+  {
+    marginBottom: "3vh",
+    height: "20vh",
+    width: "20vw",
+    borderStyle: "solid"
+  },
+  projectDescription:
+  {
+    fontSize: "2.5vh",
+    borderStyle: "solid"
   }
 
 }
@@ -49,9 +70,9 @@ class Projects extends Component {
             return (
               <Card className={classes.card}>
                 <div className={classes.cardContent}>
-                  <Typography variant="h4">{project.name}</Typography>
-                  <CardMedia src={project.imageURL} component='img' />
-                  <Typography variant="p">{project.description}</Typography>
+                  <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
+                  <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
+                  <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
                 </div>
               </Card>
             )
