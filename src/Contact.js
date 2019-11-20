@@ -29,12 +29,14 @@ const styles = {
   CardContent:
   {
     display: "flex",
+    justifyContent: "space-between"
 
   },
   Card:
   {
     marginBottom: "4vh",
-    width: "30vw"
+    width: "50vw",
+    backgroundColor: "#F5F5F5",
   },
   CardContainer:
   {
@@ -45,6 +47,13 @@ const styles = {
   {
     display: "flex",
     justifyContent: "center"
+  },
+  text: {
+    fontSize: "4vh"
+  },
+  icon:
+  {
+    fontSize: "5vh"
   }
 }
 
@@ -75,7 +84,7 @@ class Contact extends Component {
                 <CardActionArea>
                   <CardContent className={classes.CardContent}>
                     <MailOutlineIcon />
-                    <Typography variant="p">Email Me at kcheriewestbrook@gmail.com</Typography>
+                    <Typography className={classes.text} variant="p">Email Me at kcheriewestbrook@gmail.com</Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -86,8 +95,8 @@ class Contact extends Component {
               <Card className={classes.Card}>
                 <CardActionArea>
                   <CardContent className={classes.CardContent}>
-                    <LinkedInIcon />
-                    <Typography variant="p">Connect with me on LinkedIn</Typography>
+                    <LinkedInIcon className={classes.icon} />
+                    <Typography className={classes.text} variant="p">Connect with me on LinkedIn</Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -100,7 +109,7 @@ class Contact extends Component {
                 <CardActionArea>
                   <CardContent className={classes.CardContent}>
                     <GitHubIcon />
-                    <Typography variant="p">Check out my GitHub Account</Typography>
+                    <Typography className={classes.text} variant="p">Check out my GitHub Account</Typography>
                   </CardContent>
                 </CardActionArea>
 
