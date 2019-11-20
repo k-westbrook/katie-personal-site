@@ -43,7 +43,7 @@ const styles =
     height: "75vh",
     marginRight: "3vw",
     marginBottom: "5vh",
-    backgroundColor: "#FAFAFA",
+    backgroundColor: "#F5F5F5",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between"
@@ -56,27 +56,35 @@ const styles =
     paddingTop: "1vh",
     paddingLeft: "1vh",
     paddingRight: "1vh",
-    height: "60vh"
+    height: "65vh"
   },
   projectTitle:
   {
     marginBottom: "1vh",
     fontSize: "3vh",
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   projectImage:
   {
     marginBottom: "3vh",
-    height: "auto",
+    height: "30vh",
     width: "100%"
   },
   projectDescription:
   {
-    fontSize: "2.5vh"
+    fontSize: "2.5vh",
+    color: "#616161",
+
+  },
+  descriptionAndTitle:
+  {
+    display: "flex",
+    flexDirection: "column",
+    height: "20vh"
   },
   CardActions:
   {
-    height: "15vh"
+    height: "10vh"
   },
   Icons:
   {
@@ -106,7 +114,7 @@ class Projects extends Component {
 
                 <div className={classes.cardContent}>
                   <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
-                  <CardContent>
+                  <CardContent className={classes.descriptionAndTitle}>
                     <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
                     <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
                   </CardContent>
