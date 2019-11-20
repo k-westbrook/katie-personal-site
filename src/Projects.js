@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
-import { CardMedia } from 'material-ui';
+import CardMedia from '@material-ui/core/CardMedia';
 
 
 const styles =
