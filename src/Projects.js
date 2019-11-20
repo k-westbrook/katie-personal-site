@@ -8,6 +8,20 @@ const styles =
   projectPageContainer: {
     marginTop: "11vh",
     padding: '5vh'
+  },
+  projectsCardContainer:
+  {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+
+  },
+  card:
+  {
+    width: "20vw",
+    height: "15vh",
+    marginRight: "3vw",
+    marginBottom: "5vh"
   }
 
 }
@@ -22,10 +36,10 @@ class Projects extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.projectPageContainer}>
-        <div>
+        <div className={classes.projectsCardContainer}>
           {projects.map(project => {
             return (
-              <Card>{project.name}</Card>
+              <Card className={classes.card}>{project.name}</Card>
             )
           })}
 
