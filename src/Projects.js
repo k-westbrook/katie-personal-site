@@ -50,7 +50,8 @@ class Projects extends Component {
               <Card className={classes.card}>
                 <div className={classes.cardContent}>
                   <Typography variant="h4">{project.name}</Typography>
-                  <CardMedia src={project.imageURL} component='image' />
+                  <CardMedia src={project.imageURL} component='img' />
+                  <Typography variant="p">{project.description}</Typography>
                 </div>
               </Card>
             )
