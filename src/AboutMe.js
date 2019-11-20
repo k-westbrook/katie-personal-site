@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, border } from '@material-ui/system';
 import keyboard from './keyboard.jpg';
+import coding from './coding.jpg'
 import Typography from '@material-ui/core/Typography';
 import CropDinIcon from '@material-ui/icons/CropDin';
 
@@ -13,7 +14,6 @@ const styles = {
     marginTop: "11vh",
     display: "flex",
     width: "100vw"
-
   },
   imageContainer:
   {
@@ -30,8 +30,22 @@ const styles = {
 
 
   },
-  resumeContainer: {
+  imageContainer2:
+  {
 
+    backgroundImage: `url(${coding})`,
+    backgroundColor: "#37474f",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    borderStyle: "solid",
+    height: "80vh",
+    width: "100vw"
+
+
+  },
+  resumeContainer: {
     width: "100vw",
   },
   mainTitle:
@@ -40,21 +54,30 @@ const styles = {
     textAlign: "center",
     marginTop: "3vh",
     color: "#FFFFFF",
-
   },
   aboutMe:
   {
+
     fontSize: "4vh",
     color: "#FFFFFF",
     marginLeft: "3vw",
     marginTop: "3vh",
     marginBottom: "3vh"
   },
+  subTitleSummary:
+  {
+    fontSize: "7vh",
+    color: "#FFFFFF",
+    marginLeft: "3vw",
+    marginBottom: "0vh"
+
+  },
   subTitles:
   {
     fontSize: "7vh",
     color: "#FFFFFF",
-    marginLeft: "3vw"
+    marginLeft: "3vw",
+    marginTop: "5vh"
 
   },
   list:
@@ -102,13 +125,13 @@ class AboutMe extends Component {
 
         </div>
         <div className={classes.resumeContainer}>
-          <div>
+          <div className={classes.titleHeaderContainer}>
 
             <Typography variant='h1' className={classes.mainTitle}>About Me</Typography>
           </div>
           <div>
             <div>
-              <Typography variant="h3" className={classes.subTitles}>Summary</Typography>
+              <Typography variant="h3" className={classes.subTitleSummary}>Summary</Typography>
             </div>
             <div className={classes.aboutMe}>
               <Typography variant="p"  >Hello! I am a fullstack developer who has a penchant for front end software engineering. I began my professional journey to software engineering by taking onlince classes in basic SQL. After a few months of a Android Basics class, I applied and got accepted to Grace Hopper Program at Fullstack Academy in NYC. To be accepted, you need to not only pass a coding challenge but a live technical interview.<br /><br />
@@ -118,6 +141,7 @@ class AboutMe extends Component {
 
             </div>
           </div>
+          <div className={classes.imageContainer2}></div>
           <div>
             <Typography variant="h3" className={classes.subTitles}>Experience</Typography>
           </div>
