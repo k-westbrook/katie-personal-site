@@ -5,6 +5,10 @@ import Typography from '@material-ui/core/Typography';
 import sea from './sea.mp4';
 import CardMedia from '@material-ui/core/CardMedia';
 import PetsIcon from '@material-ui/icons/Pets';
+import FireplaceTwoToneIcon from '@material-ui/icons/FireplaceTwoTone';
+import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
+import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
+
 
 const styles = {
   homePageContainer:
@@ -37,8 +41,20 @@ const styles = {
     display: "flex",
     backgroundColor: "rgb(47,79,79);opacity:0.8",
     borderStyle: "solid",
-    adjustContent: "center",
-    padding: "3vw"
+    alignContent: "center",
+    padding: "3vw",
+    color: "  #FFFFFF"
+  },
+  iconContainer:
+  {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "2vw"
+  },
+  iconBottom:
+  {
+    marginLeft: "5vw",
+    fontSize: "5vw"
   }
 
 };
@@ -66,7 +82,11 @@ class HomePage extends Component {
         </div >
         <div className={classes.infoContainer}>
           <Typography className={classes.infoHome}>I wanted a place to compile and share my photos. <br />Click on Top Right Menu to see categories</Typography>
-          <PetsIcon />
+          <div className={classes.iconContainer}>
+            <PetsIcon className={classes.iconBottom} />
+            <AirplanemodeActiveIcon className={classes.iconBottom} />
+            <FireplaceTwoToneIcon className={classes.iconBottom} />
+          </div>
         </div>
       </div>
     )
