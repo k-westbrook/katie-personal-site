@@ -28,7 +28,7 @@ class Routes extends Component {
         <Switch >
           <Route exact path="/" component={HomePage} />
           <Route exact path="/aboutMe" component={AboutMe} />
-          <Route exact path="/projects" component={Projects} />
+          {/* <Route exact path="/projects" component={Projects} /> */}
 
         </Switch>
       </div>

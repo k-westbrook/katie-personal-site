@@ -107,11 +107,11 @@ class NavBar extends React.Component {
                 <h4> About Me</h4>
               </Link>
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            {/* <MenuItem onClick={this.handleClose}>
               <Link href='/projects'>
                 <h4> My Projects</h4>
               </Link>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
 
         </AppBar>
