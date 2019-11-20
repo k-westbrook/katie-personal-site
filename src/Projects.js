@@ -4,6 +4,10 @@ import { sizing, border } from '@material-ui/system';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+
 
 
 const styles =
@@ -25,7 +29,8 @@ const styles =
     width: "25vw",
     minHeight: "40vh",
     marginRight: "3vw",
-    marginBottom: "5vh"
+    marginBottom: "5vh",
+    backgroundColor: "#FAFAFA"
   },
   cardContent:
   {
@@ -37,20 +42,17 @@ const styles =
   projectTitle:
   {
     marginBottom: "1vh",
-    fontSize: "4vh",
-    borderStyle: "solid"
+    fontSize: "4vh"
   },
   projectImage:
   {
     marginBottom: "3vh",
     height: "20vh",
-    width: "23.5vw",
-    borderStyle: "solid"
+    width: "23.5vw"
   },
   projectDescription:
   {
-    fontSize: "2.5vh",
-    borderStyle: "solid"
+    fontSize: "2.5vh"
   }
 
 }
@@ -69,11 +71,15 @@ class Projects extends Component {
           {projects.map(project => {
             return (
               <Card className={classes.card}>
-                <div className={classes.cardContent}>
-                  <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
-                  <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
-                  <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
-                </div>
+                <CardActionArea>
+                  <div className={classes.cardContent}>
+                    <CardMedia className={classes.projectImage} src={project.imageURL} component='img' />
+                    <CardContent>
+                      <Typography className={classes.projectTitle} variant="h4">{project.name}</Typography>
+                      <Typography className={classes.projectDescription} variant="p">{project.description}</Typography>
+                    </CardContent>
+                  </div>
+                </CardActionArea>
               </Card>
             )
           })}
