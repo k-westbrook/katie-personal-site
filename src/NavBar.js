@@ -17,18 +17,31 @@ const styles = {
   AppBar: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#e0f2f1",
+    backgroundColor: "rgb(47,79,79);opacity:0.8",
     minHeight: "10vh",
     borderStyle: "solid",
+    position: "fixed",
+    top: 0
   },
   Menu:
   {
     display: "flex",
 
+
+  },
+  MenuTitle:
+  {
+    color: "#FFFFFF",
+    fontSize: "5vh"
+  },
+  MenuIcon:
+  {
+    color: "#FFFFFF",
+    fontSize: "6vh"
   },
   MenuItem:
   {
-
+    width: "15vw"
   }
 }
 class NavBar extends React.Component {
@@ -63,11 +76,11 @@ class NavBar extends React.Component {
     return (
       <div className={classes.root}>
 
-        <AppBar position="static" className={classes.AppBar}>
+        <AppBar className={classes.AppBar}>
 
           <IconButton onClick={this.handleClick}>
-            <MenuIcon />
-            <Typography>Katie Westbrook</Typography>
+            <MenuIcon className={classes.MenuIcon} />
+            <Typography className={classes.MenuTitle}>Menu</Typography>
           </IconButton>
 
           <Menu className={classes.Menu}
@@ -84,26 +97,14 @@ class NavBar extends React.Component {
             }}
           >
             <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
-              <Link to='/'>
+              <Link href='/'>
                 <h4>Home</h4>
               </Link>
 
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-              <Link to='/projects'>
-                <h4>Trips</h4>
-              </Link>
-            </MenuItem>
-            <MenuItem onClick={this.handleClose}>
-              <Link to='/cats'>
+              <Link href='/cats'>
                 <h4> Cats</h4>
-              </Link>
-            </MenuItem>
-
-            <MenuItem onClick={this.handleClose}>
-
-              <Link to='/photo-gallery'>
-                <h4>Seattle</h4>
               </Link>
             </MenuItem>
           </Menu>

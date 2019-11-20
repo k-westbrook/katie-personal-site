@@ -44,14 +44,13 @@ const styles = {
     borderStyle: "solid",
     alignContent: "center",
     padding: "3vw",
-    color: "  #FFFFFF",
+    color: "#FFFFFF",
     justifyContent: "space-between"
   },
   iconContainer:
   {
     display: "flex",
-    flexDirection: "row",
-    // marginLeft: "2vw"
+    flexDirection: "row"
   },
   iconBottom:
   {

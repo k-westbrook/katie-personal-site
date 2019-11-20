@@ -27,8 +27,7 @@ class Routes extends Component {
         <Switch >
           <Route exact path="/" component={HomePage} />
           <Route exact path="/cats" component={Cats} />
-          <Route exact path='/projects' />
-          <Route exact path='/photo-gallery' />
+
         </Switch>
       </div>
     )
