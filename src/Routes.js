@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Contact from './Contact'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
+import HomePageMobile from './HomePageMobile';
 
 
 const styles = {
@@ -42,7 +43,11 @@ class Routes extends Component {
             </div >
             :
             <div>
-              <p>HEllo</p>
+              <Switch >
+                <Route exact path="/" component={HomePageMobile} />
+
+
+              </Switch>
             </div>
         }
       </div>
