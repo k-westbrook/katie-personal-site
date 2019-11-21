@@ -41,7 +41,7 @@ const styles = {
   },
   MenuItem:
   {
-    width: "15vw",
+    width: "60vw",
     height: "10vh"
   }
 
