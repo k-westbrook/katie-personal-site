@@ -16,31 +16,30 @@ const styles =
 {
   mainTitle:
   {
-    fontSize: "15vh",
+    fontSize: "8vh",
     textAlign: "center",
     marginTop: "3vh",
     color: "#FFFFFF",
-    marginBottom: "8vh",
+    marginBottom: "2vh",
     borderBottomStyle: "solid",
     paddingBottom: "2vh"
-
   },
   projectPageContainer: {
-    marginTop: "11vh",
-    padding: '5vh'
+    marginTop: "8vh",
+    paddingTop: "1vh"
   },
   projectsCardContainer:
   {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-between"
+    justifyContent: "center"
 
   },
   card:
   {
-    width: "25vw",
-    height: "75vh",
+    width: "90vw",
+    minHeight: "60vh",
     marginRight: "3vw",
     marginBottom: "5vh",
     backgroundColor: "#F5F5F5",
@@ -56,7 +55,7 @@ const styles =
     paddingTop: "1vh",
     paddingLeft: "1vh",
     paddingRight: "1vh",
-    height: "65vh"
+    minHeight: "30vh"
   },
   projectTitle:
   {
@@ -67,7 +66,7 @@ const styles =
   projectImage:
   {
     marginBottom: "3vh",
-    height: "30vh",
+    height: "auto",
     width: "100%"
   },
   projectDescription:
@@ -80,15 +79,15 @@ const styles =
   {
     display: "flex",
     flexDirection: "column",
-    height: "20vh"
+    minHeight: "20vh"
   },
   CardActions:
   {
-    height: "10vh"
+    minHeight: "6vh"
   },
   Icons:
   {
-    fontSize: "2.5vw"
+    fontSize: "5vh"
   }
 
 }
