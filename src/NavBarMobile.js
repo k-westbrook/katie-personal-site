@@ -19,7 +19,6 @@ const styles = {
     flexDirection: "row",
     backgroundColor: "rgb(47,79,79);opacity:0.8",
     minHeight: "5vh",
-    borderStyle: "solid",
     position: "fixed",
     top: 0
   },
