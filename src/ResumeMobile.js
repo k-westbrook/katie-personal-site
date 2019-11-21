@@ -39,7 +39,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     marginTop: "3vh",
-    marginLeft: "1vw",
+    marginLeft: "8vw",
     width: "90vw"
   },
   listItem:
@@ -83,7 +83,7 @@ class ResumeMobile extends Component {
                 </div>
                 <div >
                   <div >
-                    <Typography variant='p'>Software Engineer Apprentice</Typography>
+                    <Typography variant='p'><b><u>Software Engineer Apprentice</u></b></Typography>
                   </div>
                   <div >
                     <Typography variant='p'>
@@ -104,7 +104,7 @@ class ResumeMobile extends Component {
                 <div >
 
                   <div >
-                    <Typography variant='p'>Licensing Analyst II</Typography>
+                    <Typography variant='p'><b><u>Licensing Analyst II</u></b></Typography>
                   </div>
                   <div >
                     <Typography variant='p'>
@@ -122,7 +122,7 @@ class ResumeMobile extends Component {
                 </div>
                 <div >
                   <div >
-                    <Typography variant='p'>Market Research Intern</Typography>
+                    <Typography variant='p'><b><u>Market Research Intern</u></b></Typography>
                   </div>
                   <div >
                     <Typography variant='p'>
@@ -153,21 +153,19 @@ class ResumeMobile extends Component {
               <CropDinIcon />
             </div>
             <div >
-              <div className={classes.jobTitle} >
+              <div >
                 <div >
-                  <div >
-                    <Typography variant='p'>Fullstack Academy</Typography>
-                  </div>
-                  <div >
-                    <Typography variant='p'>
-                      Immersive Fullstack Software Engineering Program</Typography>
-                  </div>
+                  <Typography variant='p'><b><u>Fullstack Academy</u></b></Typography>
                 </div>
                 <div >
-                  <Typography variant='p'>February 2019</Typography>
+                  <Typography variant='p'>
+                    Immersive Fullstack Software Engineering Program</Typography>
                 </div>
-
               </div>
+              <div >
+                <Typography variant='p'>February 2019</Typography>
+              </div>
+
             </div>
           </div>
 
@@ -176,21 +174,21 @@ class ResumeMobile extends Component {
               <CropDinIcon />
             </div>
             <div >
-              <div className={classes.jobTitle} >
-                <div >
-                  <div >
-                    <Typography variant='p'>Texas A&M University</Typography>
-                  </div>
-                  <div >
-                    <Typography variant='p'>
-                      Bachelor of Science in Biology</Typography>
-                  </div>
-                </div>
-                <div >
-                  <Typography variant='p'>May 2010</Typography>
-                </div>
 
+              <div >
+                <div >
+                  <Typography variant='p'><b><u>Texas A&M University</u></b></Typography>
+                </div>
+                <div >
+                  <Typography variant='p'>
+                    Bachelor of Science in Biology</Typography>
+                </div>
               </div>
+              <div >
+                <Typography variant='p'>May 2010</Typography>
+              </div>
+
+
             </div>
           </div>
         </div>
