@@ -13,18 +13,17 @@ import Link from '@material-ui/core/Link';
 const styles = {
   mainTitle:
   {
-    fontSize: "15vh",
+    fontSize: "8vh",
     textAlign: "center",
     marginTop: "3vh",
     color: "#FFFFFF",
-    marginBottom: "8vh",
+    marginBottom: "2vh",
     borderBottomStyle: "solid",
     paddingBottom: "2vh"
-
   },
   contactPageContainer: {
-    marginTop: "11vh",
-    padding: '5vh'
+    marginTop: "8vh",
+    padding: '1vh'
   },
   CardContent:
   {
@@ -59,7 +58,7 @@ const styles = {
 
 
 
-class Contact extends Component {
+class ContactMobile extends Component {
 
   constructor() {
     super()
@@ -123,4 +122,4 @@ class Contact extends Component {
 }
 
 
-export default withStyles(styles)(Contact)
+export default withStyles(styles)(ContactMobile)
