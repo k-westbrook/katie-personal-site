@@ -70,7 +70,7 @@ const styles = {
 };
 
 
-class AboutMeMobile extends Component {
+class ResumeMobile extends Component {
 
 
 
@@ -256,4 +256,4 @@ class AboutMeMobile extends Component {
 }
 
 
-export default withStyles(styles)(AboutMeMobile)
+export default withStyles(styles)(ResumeMobile)
