@@ -111,6 +111,11 @@ class NavBarMobile extends React.Component {
               </Link>
             </MenuItem>
             <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
+              <Link underline="none" href='/resume'>
+                <Typography variant='h4'> My Resume</Typography>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={this.handleClose} className={classes.MenuItem}>
               <Link underline="none" href='/projects'>
                 <Typography variant='h4'>My Projects</Typography>
               </Link>

@@ -8,6 +8,7 @@ import AboutMeMobile from './AboutMeMobile'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
 import HomePageMobile from './HomePageMobile';
+import ResumeMobile from './ResumeMobile';
 
 
 const styles = {
@@ -54,7 +55,7 @@ class Routes extends Component {
               <Switch >
                 <Route exact path="/" component={HomePageMobile} />
                 <Route exact path="/aboutMe" component={AboutMeMobile} />
-
+                <Route exact path="/resume" component={ResumeMobile} />
               </Switch>
             </div>
         }
