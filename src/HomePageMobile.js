@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, spacing } from '@material-ui/system';
 import Typography from '@material-ui/core/Typography';
-import sea from './sea.mp4';
+import mobilehome from './mobilehome.jpg';
 import CardMedia from '@material-ui/core/CardMedia';
 import PetsIcon from '@material-ui/icons/Pets';
 import FireplaceTwoToneIcon from '@material-ui/icons/FireplaceTwoTone';
@@ -16,23 +16,28 @@ const styles = {
   homePageContainer:
   {
     position: "relative",
+    marginTop: "8vh"
 
   },
   titleContainer:
   {
-    textAlign: "Center",
-    position: "absolute",
-    top: "60%",
-    left: "25%",
+    textAlign: "center",
+    marginBottom: "2vh",
+    backgroundColor: "rgb(47,79,79);opacity:0.8"
+
+
   },
   video:
   {
     width: "100%",
+    height: "auto",
+    marginBottom: "2vh"
+
 
   },
   titleHome:
   {
-    fontSize: "20vh"
+    fontSize: "10vh"
   },
   infoHome:
   {
@@ -41,6 +46,7 @@ const styles = {
   infoContainer:
   {
     display: "flex",
+    flexDirection: "column",
     backgroundColor: "rgb(47,79,79);opacity:0.8",
     borderStyle: "solid",
     alignContent: "center",
@@ -73,7 +79,7 @@ class HomePageMobile extends Component {
       <div>
         <div className={classes.homePageContainer}>
           <div>
-            <CardMedia className={classes.video} component="video" src={sea} autoPlay="autoplay" muted loop>
+            <CardMedia className={classes.video} component="img" src={mobilehome}>
 
             </CardMedia>
           </div>

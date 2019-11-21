@@ -18,7 +18,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     backgroundColor: "rgb(47,79,79);opacity:0.8",
-    minHeight: "10vh",
+    minHeight: "5vh",
     borderStyle: "solid",
     position: "fixed",
     top: 0
@@ -32,12 +32,12 @@ const styles = {
   MenuTitle:
   {
     color: "#FFFFFF",
-    fontSize: "5vh"
+    fontSize: "3vh"
   },
   MenuIcon:
   {
     color: "#FFFFFF",
-    fontSize: "6vh"
+    fontSize: "4vh"
   },
   MenuItem:
   {
