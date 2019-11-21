@@ -23,16 +23,28 @@ class Routes extends Component {
 
 
   render() {
+    const match = window.matchMedia("(min-width: 600px)").matches;
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
-        <Switch >
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/aboutMe" component={AboutMe} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contactMe" component={Contact} />
+      <div>
+        {
+          match ?
+            <div className={classes.root
+            } >
+              <Switch >
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/aboutMe" component={AboutMe} />
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/contactMe" component={Contact} />
 
-        </Switch>
+              </Switch>
+
+            </div >
+            :
+            <div>
+              <p>HEllo</p>
+            </div>
+        }
       </div>
     )
   }

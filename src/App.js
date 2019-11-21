@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Routes from './Routes.js'
 import { BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './NavBar'
+import NavBarMobile from './NavBarMobile'
 import './App.css';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { sizing } from '@material-ui/system';
@@ -40,12 +41,19 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
+
   render() {
+    const match = window.matchMedia("(min-width: 600px)").matches;
+
     return (
       <div>
         <ThemeProvider theme={theme}>
           <Router>
-            <NavBar />
+            {match ?
+              <NavBar />
+              :
+              <NavBarMobile />
+            }
             <Routes />
           </Router>
         </ThemeProvider>

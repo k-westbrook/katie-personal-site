@@ -11,6 +11,7 @@ import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 
+
 const styles = {
   homePageContainer:
   {
@@ -66,6 +67,7 @@ class HomePage extends Component {
 
 
   render() {
+
     const { classes } = this.props;
     return (
       <div>
