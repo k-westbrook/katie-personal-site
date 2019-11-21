@@ -23,24 +23,27 @@ const styles = {
   },
   contactPageContainer: {
     marginTop: "8vh",
-    padding: '1vh'
+    padding: '1vh',
+    height: "75vh"
   },
   CardContent:
   {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: "center"
 
   },
   Card:
   {
     marginBottom: "4vh",
-    width: "50vw",
+    width: "95vw",
     backgroundColor: "#F5F5F5",
   },
   CardContainer:
   {
     display: "flex",
     flexDirection: "column",
+    marginTop: "5vh"
   },
   cardHolder:
   {
@@ -48,11 +51,12 @@ const styles = {
     justifyContent: "center"
   },
   text: {
-    fontSize: "4vh"
+    fontSize: "2.5vh"
   },
   icon:
   {
-    fontSize: "5vh"
+    fontSize: "8vh",
+    marginRight: "2vw"
   }
 }
 
@@ -82,7 +86,7 @@ class ContactMobile extends Component {
               <Card className={classes.Card}>
                 <CardActionArea>
                   <CardContent className={classes.CardContent}>
-                    <MailOutlineIcon />
+                    <MailOutlineIcon className={classes.icon} />
                     <Typography className={classes.text} variant="p">Email me at kcheriewestbrook@gmail.com</Typography>
                   </CardContent>
                 </CardActionArea>
@@ -107,7 +111,7 @@ class ContactMobile extends Component {
 
                 <CardActionArea>
                   <CardContent className={classes.CardContent}>
-                    <GitHubIcon />
+                    <GitHubIcon className={classes.icon} />
                     <Typography className={classes.text} variant="p">Check out my GitHub Account</Typography>
                   </CardContent>
                 </CardActionArea>
