@@ -20,7 +20,9 @@ const styles = {
     textAlign: "center",
     marginTop: "3vh",
     color: "#FFFFFF",
-    marginBottom: "2vh"
+    marginBottom: "2vh",
+    borderBottomStyle: "solid",
+    paddingBottom: "2vh"
   },
   aboutMe:
   {
