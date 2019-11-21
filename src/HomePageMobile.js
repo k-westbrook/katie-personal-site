@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import { sizing, spacing } from '@material-ui/system';
+import { sizing, spacing, borderColor } from '@material-ui/system';
 import Typography from '@material-ui/core/Typography';
 import mobilehome from './mobilehome.jpg';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -13,26 +13,27 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 
 const styles = {
+  background:
+  {
+    backgroundColor: "rgb(47,79,79);opacity:0.8"
+
+  },
   homePageContainer:
   {
     position: "relative",
     marginTop: "8vh"
-
   },
   titleContainer:
   {
     textAlign: "center",
-    marginBottom: "2vh",
-    backgroundColor: "rgb(47,79,79);opacity:0.8"
-
-
+    borderTopStyle: "solid",
+    borderBottomStyle: "solid",
+    borderWidth: "2vh"
   },
   video:
   {
     width: "100%",
-    height: "auto",
-    marginBottom: "2vh"
-
+    height: "auto"
 
   },
   titleHome:
@@ -41,28 +42,29 @@ const styles = {
   },
   infoHome:
   {
-    fontSize: "4vh"
+    fontSize: "3vh"
   },
   infoContainer:
   {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "rgb(47,79,79);opacity:0.8",
-    borderStyle: "solid",
     alignContent: "center",
     padding: "3vw",
-    color: "#FFFFFF",
-    justifyContent: "space-between"
+    minHeight: "28vh",
+    color: "#FFFFFF"
   },
   iconContainer:
   {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: "3vh",
+
   },
   iconBottom:
   {
-    marginLeft: "5vw",
-    fontSize: "6vw"
+    fontSize: "6vh"
   }
 
 };
@@ -76,7 +78,7 @@ class HomePageMobile extends Component {
 
     const { classes } = this.props;
     return (
-      <div>
+      <div className={classes.background}>
         <div className={classes.homePageContainer}>
           <div>
             <CardMedia className={classes.video} component="img" src={mobilehome}>
