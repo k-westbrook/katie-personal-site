@@ -28,7 +28,8 @@ const styles = {
     textAlign: "center",
     borderTopStyle: "solid",
     borderBottomStyle: "solid",
-    borderWidth: "2vh"
+    borderWidth: "2vh",
+    borderColor: "#E0F2F1"
   },
   video:
   {
