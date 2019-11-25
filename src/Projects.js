@@ -18,7 +18,7 @@ const styles =
   {
     fontSize: "15vh",
     textAlign: "center",
-    marginTop: "3vh",
+    marginTop: "10vh",
     color: "#FFFFFF",
     marginBottom: "8vh",
     borderBottomStyle: "solid",
@@ -28,7 +28,6 @@ const styles =
   },
   projectPageContainer: {
     marginTop: "11vh",
-    padding: '5vh',
     width: '100vw',
     display: 'flex',
     flexDirection: 'column',
