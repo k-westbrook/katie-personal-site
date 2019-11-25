@@ -38,19 +38,19 @@ const styles =
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-between",
     width: '90vw'
-
   },
   card:
   {
     width: "25vw",
     height: "75vh",
-    marginBottom: "5vh",
+    marginBottom: "7vh",
     backgroundColor: "#F5F5F5",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    marginLeft: '2.5vw',
+    marginRight: '2.5vw'
   },
   cardContent:
   {
