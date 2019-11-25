@@ -22,26 +22,31 @@ const styles =
     color: "#FFFFFF",
     marginBottom: "8vh",
     borderBottomStyle: "solid",
-    paddingBottom: "2vh"
+    paddingBottom: "2vh",
+    width: '70vw'
 
   },
   projectPageContainer: {
     marginTop: "11vh",
-    padding: '5vh'
+    padding: '5vh',
+    width: '100vw',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
   },
   projectsCardContainer:
   {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    width: '90vw'
 
   },
   card:
   {
     width: "25vw",
     height: "75vh",
-    marginRight: "3vw",
     marginBottom: "5vh",
     backgroundColor: "#F5F5F5",
     display: "flex",
