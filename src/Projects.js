@@ -234,7 +234,4 @@ const projects = [
     gitURL: 'https://github.com/k-westbrook/happy-birthday-edd'
 
   }
-
-
-
 ]

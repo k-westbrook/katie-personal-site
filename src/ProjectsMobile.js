@@ -223,8 +223,15 @@ const projects = [
     link: 'https://whats-on-your-mind.herokuapp.com/',
     gitURL: 'https://github.com/k-westbrook/what-on-your-mind'
 
+  },
+  {
+    name: "Edd's Birthday Card?",
+    imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1574711772/personal-site/happyedd.png"
+    ,
+    description: "Social Project to wish my friend happy birthday by creating a murder mystery web app through React and Redux ",
+    link: 'https://happy-birthday-edd.herokuapp.com/',
+    gitURL: 'https://github.com/k-westbrook/happy-birthday-edd'
+
   }
-
-
 
 ]
