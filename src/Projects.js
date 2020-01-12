@@ -237,5 +237,14 @@ const projects = [
     link: 'https://happy-birthday-edd.herokuapp.com/',
     gitURL: 'https://github.com/k-westbrook/happy-birthday-edd'
 
+  },
+  {
+    name: "cityzones",
+    imageURL: "https://res.cloudinary.com/dmp2crnzz/image/upload/v1578865025/personal-site/cityzones.png"
+    ,
+    description: "City Simulation Web App Game",
+    link: 'http://cityzones.herokuapp.com/start',
+    gitURL: 'https://github.com/k-westbrook/cityzones'
+
   }
 ]
